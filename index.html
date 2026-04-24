@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trio Mágico — Neymar · Robinho · Ganso</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@300;400;600;700&family=Barlow:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg"></div>
+    <div class="noise"></div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Santos FC · 2009 – 2011</p>
+      <h1 class="hero__title">
+        <span class="title-line">Trio</span>
+        <span class="title-line accent">Mágico</span>
+      </h1>
+      <p class="hero__subtitle">A jornada épica de Neymar, Robinho e Ganso — os gols, as assistências e a magia que encantou o futebol brasileiro.</p>
+      <div class="hero__stats" id="heroStats">
+        <div class="stat-box" data-target="138">
+          <span class="stat-num">0</span>
+          <span class="stat-label">Gols Combinados</span>
+        </div>
+        <div class="stat-box" data-target="3">
+          <span class="stat-num">0</span>
+          <span class="stat-label">Temporadas Juntos</span>
+        </div>
+        <div class="stat-box" data-target="2">
+          <span class="stat-num">0</span>
+          <span class="stat-label">Títulos Nacionais</span>
+        </div>
+      </div>
+      <button class="cta-btn" onclick="scrollToSection('timeline')">Explorar a Jornada ↓</button>
+    </div>
+    <div class="hero__ball"></div>
+  </section>
+
+  <!-- NAV -->
+  <nav class="main-nav" id="mainNav">
+    <div class="nav-logo">Trio Mágico</div>
+    <div class="nav-links">
+      <a href="#players">Jogadores</a>
+      <a href="#timeline">Linha do Tempo</a>
+      <a href="#goals">Gols</a>
+      <a href="#stats">Estatísticas</a>
+    </div>
+  </nav>
+
+  <!-- PLAYERS -->
+  <section class="section players-section" id="players">
+    <div class="section-header">
+      <span class="section-tag">Os Protagonistas</span>
+      <h2 class="section-title">Três Gênios. Uma Equipe.</h2>
+    </div>
+    <div class="players-grid" id="playersGrid"></div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section timeline-section" id="timeline">
+    <div class="section-header">
+      <span class="section-tag">História</span>
+      <h2 class="section-title">A Jornada</h2>
+    </div>
+    <div class="timeline" id="timelineContainer"></div>
+  </section>
+
+  <!-- GOALS GALLERY -->
+  <section class="section goals-section" id="goals">
+    <div class="section-header">
+      <span class="section-tag">Momentos Imortais</span>
+      <h2 class="section-title">Os Gols Mais Marcantes</h2>
+    </div>
+    <div class="filters" id="filters">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="neymar">Neymar</button>
+      <button class="filter-btn" data-filter="robinho">Robinho</button>
+      <button class="filter-btn" data-filter="ganso">Ganso</button>
+    </div>
+    <div class="goals-grid" id="goalsGrid"></div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section stats-section" id="stats">
+    <div class="section-header">
+      <span class="section-tag">Números</span>
+      <h2 class="section-title">Estatísticas do Trio</h2>
+    </div>
+    <div class="stats-container" id="statsContainer"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-title">Trio Mágico</p>
+      <p class="footer-sub">Santos FC · Uma era de ouro do futebol brasileiro</p>
+      <p class="footer-credit">Criado com ❤️ para os fãs do Santos</p>
+    </div>
+  </footer>
+
+  <div class="goal-modal" id="goalModal">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-card" id="modalCard">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
